@@ -1,0 +1,45 @@
+{
+  "name": "ddp-admin",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-prettier": "^3.0.1",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-less-theme-plugin": "^2.1.0"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "asi": true,
+    "lastsemic": true
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">=3.0.0"
+  }
+}
